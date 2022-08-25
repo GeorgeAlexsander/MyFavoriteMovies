@@ -1,0 +1,85 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Filmes</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Kumbh+Sans:wght@300;400;500;600&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <main>
+        <h2>Filmes Populares</h2>
+
+        <div class="flex-container">
+            <input type="text" name="movie-name" id="movie-name" placeholder="Digite algum filme para pesquisar...">
+            <img src="images/search-icon.svg" alt="Ícone de pesquisa" class="searchIcon">
+        </div>
+
+        <div class="showOnlyFavorites">
+            <input type="checkbox" id="OnlyFavorites" name="OnlyFavorites">
+            <label for="OnlyFavorites">Mostrar apenas meus favoritos</label>
+        </div>
+
+        <div class="movies">
+            <div class="movie">
+                <div class="movie-informations">
+                    <div class="movie-image">
+                        <img src="images/lovefit.jpeg" />
+                    </div>
+                    <div class="movie-text">
+                        <h4>LoveFit: My love story (2022)</h4>
+                        <div class="rating-favorites">
+                            <div class="rating">
+                                <img src="images/star.png" alt="Star Icon" />
+                                <span>9.5</span>
+                            </div>
+                            <div class="favorite">
+                                <img src="images/heart-fill.svg" alt="Heart Fill Icon" />
+                                <span>Favoritado</span>
+                            </div>
+                        </div>
+                        <div class="movie-description">
+                            <span>Laura é uma estudante universitária, com personalidade bastante alegre e agitada, apesar de tudo, a jovem é indiferente ao amor e não deseja se apaixonar novamente ou se envolver em um relacionamento. Porém, ao conhecer George em uma academia perto de sua casa, inesperadamente tudo começa a mudar. 
+                            Embora ela esteja obstinada a não se apaixonar, este jovem está decidido a fazer ela amar ele mais do que ela ama chocolate. </span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+
+        <div class="movies">
+            <div class="movie">
+                <div class="movie-informations">
+                    <div class="movie-image">
+                        <img src="https://img.elo7.com.br/product/zoom/269274A/poster-o-senhor-dos-aneis-a-sociedade-do-anel-lo04-90x60-cm-presente-geek.jpg" />
+                    </div>
+                    <div class="movie-text">
+                        <h4>O Senhor dos Anéis: A Sociedade do Anel (2001)</h4>
+                        <div class="rating-favorites">
+                            <div class="rating">
+                                <img src="images/star.png" alt="Star Icon" />
+                                <span>8.8</span>
+                            </div>
+                            <div class="favorite">
+                                <img src="images/heart-fill.svg" alt="Heart Fill Icon" />
+                                <span>Favoritado</span>
+                            </div>
+                        </div>
+                        <div class="movie-description">
+                            <span>A meek Hobbit from the Shire and eight companions set out on a journey to destroy the powerful One Ring and save Middle-earth from the Dark Lord Sauron.</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+
+
+    </main>
+</body>
