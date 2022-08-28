@@ -25,6 +25,12 @@
     </AppXManifest>
   </ItemGroup>
   <ItemGroup>
+    <AppxPackagedFile Include="C:\Users\georg\Documents\GitHub\MyFavoriteFilms\MyFavoriteFilms\RepositorioLocal\ChaveApi.js">
+      <PackagePath>RepositorioLocal\ChaveApi.js</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\georg\Documents\GitHub\MyFavoriteFilms\MyFavoriteFilms\main.js">
+      <PackagePath>main.js</PackagePath>
+    </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\georg\Documents\GitHub\MyFavoriteFilms\MyFavoriteFilms\style.css">
       <PackagePath>style.css</PackagePath>
     </AppxPackagedFile>
@@ -60,9 +66,6 @@
     <AppxPackagedFile Include="C:\Users\georg\Documents\GitHub\MyFavoriteFilms\MyFavoriteFilms\images\Wide310x150Logo.scale-200.png">
       <PackagePath>images\Wide310x150Logo.scale-200.png</PackagePath>
       <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
-    </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\georg\Documents\GitHub\MyFavoriteFilms\MyFavoriteFilms\js\main.js">
-      <PackagePath>js\main.js</PackagePath>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\georg\Documents\GitHub\MyFavoriteFilms\MyFavoriteFilms\bin\Debug\ReverseMap\resources.pri">
       <PackagePath>resources.pri</PackagePath>

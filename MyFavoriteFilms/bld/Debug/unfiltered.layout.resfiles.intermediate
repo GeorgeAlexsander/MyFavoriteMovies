@@ -7,5 +7,6 @@ images\Square44x44Logo.targetsize-24_altform-unplated.png
 images\StoreLogo.png
 images\Wide310x150Logo.scale-200.png
 index.html
-js\main.js
+main.js
+RepositorioLocal\ChaveApi.js
 style.css
