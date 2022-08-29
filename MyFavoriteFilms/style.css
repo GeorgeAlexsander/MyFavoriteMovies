@@ -74,11 +74,12 @@ h2 {
     box-shadow: 10px 10px 30px rgba(0, 0, 0, 0.2);
 }
 
-    .movie .movie-image {
-        width: 115px; /*170 and 250 is the alternative value*/
-        height: 170px;
-        margin-right: 1rem;
-    }
+.movie .movie-image {
+    width: 115px; /*170 and 250 is the alternative value*/
+    height: 180px;    
+    flex-shrink: 0;
+    margin-right: 1rem;
+}
 
 .movie .movie-image img {
     width: 100%;

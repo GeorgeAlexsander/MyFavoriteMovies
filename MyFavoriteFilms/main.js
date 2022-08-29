@@ -93,8 +93,6 @@ function favoriteButtonStatus(event, movie) {
     }
 }
 
-
-
 window.onload = function() {
     checkCheckboxStatus()
 }
