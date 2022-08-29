@@ -44,7 +44,7 @@ function cleanAllMovies() {
 }
 
 async function getFilmesPopulares() {
-    let response = await fetch(`https://api.themoviedb.org/3/movie/popular?api_key=${ChaveApi}&language=pt-BR-US&page=1`);
+    let response = await fetch(`https://api.themoviedb.org/3/movie/popular?api_key=${ChaveApi}&language=pt-BR&page=1`);
     let { results } = await response.json();
     return results;
 }
