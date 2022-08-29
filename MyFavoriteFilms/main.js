@@ -13,6 +13,23 @@ input.addEventListener("keyup", function(event){
         managersearchSystem()
 })
 
+const checkboxInput = document.querySelector('input[type="checkbox"]')
+checkboxInput.addEventListener('change', checkCheckboxStatus)
+
+async function checkCheckboxStatus() {
+    const isChecked = checkboxInput.checked
+    cleanAllMovies()
+    if (isChecked) {
+        const movies = await getFavoriteMovies()
+        movies.forEach(movie => renderMovie(movie))
+    }
+    else {
+        const movies = await getFilmesPopulares()
+        movies.forEach(movie => renderMovie(movie))
+    }
+    
+}
+
 async function managersearchSystem() {
     const inputValue = input.value
     if (inputValue != '') {
@@ -76,9 +93,10 @@ function favoriteButtonStatus(event, movie) {
     }
 }
 
-window.onload = async function() {
-    const movies = await getFilmesPopulares()
-    movies.forEach(movie => renderMovie(movie))
+
+
+window.onload = function() {
+    checkCheckboxStatus()
 }
 
 function renderMovie(movie) {
@@ -146,7 +164,8 @@ function renderMovie(movie) {
     const movieDescription = document.createElement('span')
     movieDescription.textContent = overview
     movieDescriptionContainer.appendChild(movieDescription)
-
+    
+    movieTextContainer.appendChild(movieDescriptionContainer)
     movieElement.appendChild(movieInformations)
-    movieElement.appendChild(movieDescriptionContainer)
-    }
+
+}
